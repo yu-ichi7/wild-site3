@@ -1,0 +1,107 @@
+
+[
+  {
+    "id": "suzume",
+    "name": "スズメ",
+    "scientificName": "Passer montanus",
+    "category": "身近な鳥",
+    "description": "人家の近くに生息する小鳥。日本では非常に馴染み深い鳥の一種。チュンチュンという鳴き声が特徴。",
+    "mainImage": "/images/suzume/main.jpg",
+    "galleryImages": [
+      "/images/suzume/01.jpg",
+      "/images/suzume/02.jpg",
+      "/images/suzume/03.jpg"
+    ]
+  },
+  {
+    "id": "mejiro",
+    "name": "メジロ",
+    "scientificName": "Zosterops japonicus",
+    "category": "小さな鳥",
+    "description": "目の周りの白い輪が特徴的な、鮮やかなウグイス色の小鳥。花の蜜を好み、春には梅や桜の木でよく見かける。",
+    "mainImage": "/images/mejiro/main.jpg",
+    "galleryImages": [
+      "/images/mejiro/01.jpg",
+      "/images/mejiro/02.jpg",
+      "/images/mejiro/03.jpg"
+    ]
+  },
+  {
+    "id": "kawarasemi",
+    "name": "カワセミ",
+    "scientificName": "Alcedo atthis",
+    "category": "水辺の鳥",
+    "description": "鮮やかな青い背とオレンジ色の腹を持つ、美しい鳥。水辺に生息し、ホバリングしながら小魚を捕らえる姿から「飛ぶ宝石」とも呼ばれる。",
+    "mainImage": "/images/kawarasemi/main.jpg",
+    "galleryImages": [
+      "/images/kawarasemi/01.jpg",
+      "/images/kawarasemi/02.jpg",
+      "/images/kawarasemi/03.jpg"
+    ]
+  },
+  {
+    "id": "uguisu",
+    "name": "ウグイス",
+    "scientificName": "Horornis diphone",
+    "category": "山の鳥",
+    "description": "「ホーホケキョ」という美しい鳴き声で知られる、春を告げる鳥。警戒心が強く、姿を見るのは難しい。笹藪などを好む。",
+    "mainImage": "/images/uguisu/main.jpg",
+    "galleryImages": [
+      "/images/uguisu/01.jpg",
+      "/images/uguisu/02.jpg",
+      "/images/uguisu/03.jpg"
+    ]
+  },
+  {
+    "id": "tsubame",
+    "name": "ツバメ",
+    "scientificName": "Hirundo rustica",
+    "category": "身近な鳥",
+    "description": "春に日本へやってくる渡り鳥。人家の軒先などに泥で巣を作る習性がある。飛んでいる昆虫を捕らえて食べる。",
+    "mainImage": "/images/tsubame/main.jpg",
+    "galleryImages": [
+      "/images/tsubame/01.jpg",
+      "/images/tsubame/02.jpg",
+      "/images/tsubame/03.jpg"
+    ]
+  },
+  {
+    "id": "kiji",
+    "name": "キジ",
+    "scientificName": "Phasianus colchicus",
+    "category": "野山の鳥",
+    "description": "日本の国鳥。オスは顔が赤く、金属光沢のある美しい羽を持つ。メスは褐色で地味。地上を歩きながら餌を探すことが多い。",
+    "mainImage": "/images/kiji/main.jpg",
+    "galleryImages": [
+      "/images/kiji/01.jpg",
+      "/images/kiji/02.jpg",
+      "/images/kiji/03.jpg"
+    ]
+  },
+  {
+    "id": "fukuro",
+    "name": "フクロウ",
+    "scientificName": "Strix uralensis",
+    "category": "夜の鳥",
+    "description": "夜行性の猛禽類。大きな目と特徴的な顔を持つ。「ホーホー」という鳴き声で知られる。森の賢者とも呼ばれる。",
+    "mainImage": "/images/fukuro/main.jpg",
+    "galleryImages": [
+      "/images/fukuro/01.jpg",
+      "/images/fukuro/02.jpg",
+      "/images/fukuro/03.jpg"
+    ]
+  },
+  {
+    "id": "hayabusa",
+    "name": "ハヤブサ",
+    "scientificName": "Falco peregrinus",
+    "category": "猛禽類",
+    "description": "非常に速く飛ぶことができる猛禽類。急降下時のスピードは時速300kmを超えることもある。主に鳥類を捕食する。",
+    "mainImage": "/images/hayabusa/main.jpg",
+    "galleryImages": [
+      "/images/hayabusa/01.jpg",
+      "/images/hayabusa/02.jpg",
+      "/images/hayabusa/03.jpg"
+    ]
+  }
+]

@@ -1,20 +1,40 @@
 
-import { birds } from '@/data/birds';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 
+async function getBird(id: string) {
+  const res = await fetch(`http://localhost:1337/api/birds/${id}?populate=blocks.image_content`);
+  if (!res.ok) {
+    notFound();
+  }
+  const data = await res.json();
+  if (!data.data) {
+    notFound();
+  }
+  const bird = data.data;
+  return {
+    id: bird.id,
+    name: bird.attributes.name,
+    englishName: bird.attributes.englishName,
+    scientificName: bird.attributes.scientificName,
+    content: bird.attributes.blocks.map((block: any) => ({
+      type: block.type,
+      value: block.type === 'image' ? `http://localhost:1337${block.image_content.data.attributes.url}` : block.text_content,
+    })),
+  };
+}
+
+// This tells Next.js what pages to generate at build time
 export async function generateStaticParams() {
-  return birds.map((bird) => ({
-    id: bird.id.toString(),
+  const res = await fetch('http://localhost:1337/api/birds');
+  const data = await res.json();
+  return data.data.map((item: any) => ({
+    id: item.id.toString(),
   }));
 }
 
-const BirdDetailPage = ({ params }: { params: { id: string } }) => {
-  const bird = birds.find((b) => b.id.toString() === params.id);
-
-  if (!bird) {
-    notFound();
-  }
+const BirdDetailPage = async ({ params }: { params: { id: string } }) => {
+  const bird = await getBird(params.id);
 
   return (
     <div className="max-w-4xl mx-auto">
